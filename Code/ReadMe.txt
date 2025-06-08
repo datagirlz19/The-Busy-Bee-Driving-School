@@ -4,3 +4,8 @@ This is just a draft of the site along with the essential features that are requ
 3. The user must be able to see all their incorect answers 
 4. The user should be able to compelte a driving scavenger hunt 
 5. The user should be able to see a leader board
+
+
+Color Palette: 
+- #045F57 - Green 
+- #FAD02C - Yellow
