@@ -9,11 +9,47 @@
 <div name = "quiz_header">
 <h1>The Busy Bee Quiz</h1>
 <p>Question 1/15</p>
-</div> 
-
+</div>
 
 <h3> WHEN YOU SEE THIS SIGN, YOU MUST: </h3> 
 <img src="https://images.unsplash.com/photo-1717859258741-4bbdf06a794e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Red Stop Sign" width = "200px" height = "200px">
+
+<form action = "get">
+    <input type="radio" id="selected_answer_A" name = "selected_answer" onclick="myFunction()"> 
+      <label for = "selected_answer">
+      Stop completely, check for pedestrians, and cross traffic	
+      </label> <br>
+    <input type="radio" id="selected_answer_B" name = "selected_answer" onclick="myFunction()"> 
+      <label for = "selected_answer">
+      Slow down without coming to a complete stop	
+      </label> <br>
+      
+    <input type="radio" id="selected_answer_C" name = "selected_answer" onclick="myFunction()"> 
+      <label for = "selected_answer">
+      Stop completely and wait for a green light
+      </label> <br>
+      
+    <input type="radio" id="selected_answer_D" name = "selected_answer" onclick="myFunction()"> 
+      <label for = "selected_answer">
+      Slow down and check for traffic
+      </label> <br><br>
+    
+    <input type="submit" value="Buzz On">
+    
+    <p id="text" style="display:none">Nope, Try again next time</p>
+    <p id="text_y" style="display:none">Correct</p>
+</form>
+
+
+
+
+ 
+ <!--
+ Stop completely, check for pedestrians, and cross traffic	
+ Slow down without coming to a complete stop	
+ Stop completely and wait for a green light	
+ Slow down and check for traffic
+ --> 
 
 
 </body>
