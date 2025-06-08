@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
+
+<script>
+    function show_hide_section(div_name) {
+    var x = document.getElementById(status);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+</script>
 <head>
-<title>Page Title</title>
+<title>The Drivers School for Busy Bees</title>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <h1>The Busy Bee's Driving School</h1>
+<h3>Welcome back or join the class of 2025</h3>
 
+<button onclick="show_hide_section(log_in)">Log In</button>
+<button onclick="show_hide_section(sign_up)">Sign Up</button>
+
+
+<select id="sign_in" name="sign_in">
+  <option value="True" onclick="sign_in(true)"> 🐝 Log In </option>
+  <option value="False" onclick="sign_in(false)"> 🐝 Sign Up </option>
+</select>
+
+
+
+<div id = "log_in">
+  <h2 class = "home_button">Log In</h2>
+  <form action = "get"> 
+  <fieldset>
+    <legend >Log In:</legend>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" value="Drone #0001"><br><br> 
+
+    <label for="passcode">Password:</label><br> 
+    <input type="password" id="passcode" name="passcode" value="theBusyDriver$chool"><br><br>
+    <input type="submit" value="Enter the Hive">
+  </fieldset>
+  </form>
+</div>
+
+
+<div id = "sign_up">
+  <h2 class = "home_button">Sign Up</h2>
+  <form action = "get"> 
+  <fieldset>
+    <legend>Sign Up:</legend>
+    <label for="newusername">Choose A Username:</label><br>
+    <input type="text" id="newusername" name="newusername" value="Drone #0001"><br><br> 
+
+    <label for="newpasscode">Choose A Password:</label><br> 
+    <input type="password" id="newpasscode" name="newpasscode" value="theBusyDriver$chool"><br><br>
+
+
+    <label for="emailaccount">Enter your Email:</label><br> 
+    <input type="email" id="emailaccount" name="emailaccount" value="BusyBee65@beemail.net"><br><br>
+
+    <input type="checkbox" id="terms" name="terms" value="True">
+    <label for="terms"> 🐝 By entering the hive, you agree to our [Terms and Conditions].</label><br> <br>
+
+    <input type="submit" value="Join the Hive">
+    </fieldset>
+  </form>
+</div>
 </body>
 </html>
