@@ -4,7 +4,19 @@
 <title>Page Title</title>
 </head>
 <body>
-
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("selected_answer_B");
+  var text = document.getElementById("text");
+  var texty = document.getElementById("text_y");
+  
+  if (checkBox.checked == false){
+    text.style.display = "block";
+  } else {
+     texty.style.display = "block";
+  }
+}
+</script>
 
 <div name = "quiz_header">
 <h1>The Busy Bee Quiz</h1>
@@ -35,12 +47,18 @@
       </label> <br><br>
     
     <input type="submit" value="Buzz On">
-    
-    <p id="text" style="display:none">Rember: Stop completely, check for pedestrians, and cross traffic</p>
-    <p id="text_y" style="display:none">Correct</p>
-</form>
+</form> <br>
 
+<fieldset id="text" style="display:none">
+<legend>
+🐝🚨 BZZZT!
+</legend>
+<p>I’m letting you off with a warning this time — but remember:</p>
+<h4> </style>Stop completely, check for pedestrians, and cross traffic</h4>
+<p>Safety first, sugarwing.</p>
+</fieldset>
 
+<p id="text_y" style="display:none">Correct</p>
 
 
  
